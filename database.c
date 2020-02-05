@@ -18,13 +18,13 @@ int main(int argc, char **argv)
       fprintf(stderr, "mysql_init() failed\n");
       exit(1);
   }  
-  
+  //login to database
   if (mysql_real_connect(con, "localhost", "root", "Enta2019", 
           "mydb", 0, NULL, 0) == NULL) 
   {
       finish_with_error(con);
   }    
-  
+  //select the table
   if (mysql_query(con, "SELECT * FROM Alunos")) 
   {
       finish_with_error(con);
