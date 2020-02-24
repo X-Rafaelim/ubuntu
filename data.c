@@ -55,7 +55,7 @@ void input(void)
 
 	char buf[1024] = {}; // Uma variavel para inserir um conjunto de paramaetros dentro
 	char query_string[] = { 
-    "INSERT INTO Alunos( Nome, Notas) VALUES(\"%d\", %s)"};
+    "INSERT INTO Alunos( Nome, Notas) VALUES(\"%s\", %d)"};
 
 	sprintf(buf, query_string, Nome, Nota);  // Define os parametros [query_string, Nome, Nota] dentro de [buf]
 
